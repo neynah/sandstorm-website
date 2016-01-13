@@ -316,7 +316,7 @@ body >footer {
     
     >li {  
       display: block;
-			justify-content: space-between;
+      justify-content: space-between;
       flex: 1 1 33%;
 
       @media (max-width: 800px) {
@@ -340,7 +340,7 @@ body >footer {
 
 .action {
   text-align: center;
-  padding: 35px 0;
+  padding: 30px 0;
 
   @include stripe {
     background-color: #F4F3FB;
@@ -353,7 +353,8 @@ body >footer {
       
       @media (max-width: 800px) {
         display: block;
-        padding-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
 
@@ -369,6 +370,11 @@ body >footer {
         color: #7356cc;
       }
       white-space: nowrap;
+      @media (max-width: 800px) {
+        display: block;
+	    margin-left: auto;
+		margin-right: auto;
+	  }
     }
 }
 
@@ -1256,38 +1262,38 @@ body >footer {
           width: 100%;
           padding: 0 0 50px 0;
 
-					&::before {
-						content: " ";
-						display: block;
-						background-repeat: none;
-						height: 180px;
-						background: bottom/contain no-repeat;
-					}
+            &::before {
+              content: " ";
+              display: block;
+              background-repeat: none;
+              height: 180px;
+              background: bottom/contain no-repeat;
+            }
 
-					@include stripe {
-						background-color: #edf2f9;
-						height: 180px;
-					}
+            @include stripe {
+                background-color: #edf2f9;
+                height: 180px;
+            }
 
-					&.on-prem::before { display: none; }
+            &.on-prem::before { display: none; }
 
-					&.ldap::before { 
-						background-image: url("images/business-ldap.svg"); 
-					}
-					&.group::before { background-image: url("images/business-group.svg"); }
-					&.global::before { 
-						background-image: url("images/business-global.svg");
-					}
-					&.audit::before { display: none; }
-					&.scale-out::before { background-image: url("images/business-scale-out.svg"); }
-					&.failover::before { background-image: url("images/business-failover.svg"); }
-					&.encryption::before { background-image: url("images/business-encryption.svg"); }
+            &.ldap::before { 
+                background-image: url("images/business-ldap.svg"); 
+            }
+            &.group::before { background-image: url("images/business-group.svg"); }
+            &.global::before { 
+                background-image: url("images/business-global.svg");
+            }
+            &.audit::before { display: none; }
+            &.scale-out::before { background-image: url("images/business-scale-out.svg"); }
+            &.failover::before { background-image: url("images/business-failover.svg"); }
+            &.encryption::before { background-image: url("images/business-encryption.svg"); }
 			}
-    }
-  }
+        }
+      }
 
   #dev {
-		display: inline-block;
+    display: inline-block;
     list-style: none;
     width: 100%;
     display: flex;
@@ -1295,45 +1301,45 @@ body >footer {
     flex-direction: row;
     flex-wrap: wrap;
 		
-		h3 {
+    h3 {
       text-align: left;
 
       @media (max-width: 800px) {
         width: 100%;
         padding: 0 10px;
         text-align: center;
-    	}
-		}
+        }
+    }
 		
 		li {
-			display: inline-block;
-			text-align: left;
-			width: 46%;
-			position: relative;
-      padding: 0 0 50px 0;
+          display: inline-block;
+          text-align: left;
+          width: 46%;
+          position: relative;
+          padding: 0 0 50px 0;
 
-			@media (max-width: 800px) {
-				width: 100%;
-			}
+          @media (max-width: 800px) {
+            width: 100%;
+          }
 
-			&::before {
-				content: " ";
-				display: block;
-				background-repeat: none;
-				height: 180px;
-				background: bottom/contain no-repeat;
-			}
-			@include stripe {
-				background-color: #edf2f9;
-				height: 180px;
-			}
-			&.linux::before { background-image: url("images/developer-linux.svg"); }
-			&.runtime::before { background-image: url("images/developer-runtime.svg"); }
-			&.boilerplate::before { background-image: url("images/developer-boilerplate.svg"); }
-			&.dev-ops::before { background-image: url("images/developer-dev-ops.svg"); }
-			&.integration::before { background-image: url("images/developer-integration.svg"); }
-			&.in-app::before { background-image: url("images/developer-in-app.svg"); }
-			}
+          &::before {
+            content: " ";
+            display: block;
+            background-repeat: none;
+            height: 180px;
+            background: bottom/contain no-repeat;
+          }
+          @include stripe {
+            background-color: #edf2f9;
+            height: 180px;
+          }
+          &.linux::before { background-image: url("images/developer-linux.svg"); }
+          &.runtime::before { background-image: url("images/developer-runtime.svg"); }
+          &.boilerplate::before { background-image: url("images/developer-boilerplate.svg"); }
+          &.dev-ops::before { background-image: url("images/developer-dev-ops.svg"); }
+          &.integration::before { background-image: url("images/developer-integration.svg"); }
+          &.in-app::before { background-image: url("images/developer-in-app.svg"); }
+		}
 }
 // =======================================================================================
 // get.html
@@ -1355,6 +1361,11 @@ body >footer {
     }
 
     p { margin-bottom: 0; }
+  }
+  
+  section h2 {
+    padding-top: 20px;
+    font-weight: 300;
   }
 
   #where {
@@ -1495,7 +1506,7 @@ body >footer {
         }
 
         &.plan2 {
-          margin: 0 2% 0 2%;
+          margin: 0 2% 20px 2%;
           width: 45%;
           position: relative;
           box-shadow: 0 1px 3px rgba(0,0,0,0.2);
