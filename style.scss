@@ -268,9 +268,9 @@ body >footer {
 	ul {
 			
 		h3, h3 a {
-			text-decoration: none;
-			font-weight: normal;
-                        color: $puplebg-fontcolor;
+          text-decoration: none;
+          font-weight: normal;
+          color: $puplebg-fontcolor;
 		}
 			
     li a {
@@ -366,10 +366,10 @@ body >footer {
       border-radius: 6px;
       background-color: white;
       color: $purplebutton-bg;
+      white-space: nowrap;
       &:hover {
         color: #7356cc;
       }
-      white-space: nowrap;
       @media (max-width: 800px) {
         display: block;
 	    margin-left: auto;
