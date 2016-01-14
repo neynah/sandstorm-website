@@ -353,8 +353,7 @@ body >footer {
       
       @media (max-width: 800px) {
         display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 10px;
       }
     }
 
@@ -389,37 +388,37 @@ body >footer {
       width: 20px;
       position: relative;
       text-align: left;
-			font-size: 16px;
+      font-size: 16px;
       margin: 0 10px;
 			
-			a {
-				display: inline-block;
-				width: 100%;
-				position: relative;
-				text-align: center;
-					
-				&::before {
-					font-family: sandstorm;
-					display: block;
-					background-repeat: no-repeat;
-					height: 30px;
-					font-size: 25px;
-					background: bottom/contain no-repeat;
-      	}
+        a {
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          text-align: center;
+
+          &::before {
+            font-family: sandstorm;
+            display: block;
+            background-repeat: no-repeat;
+            height: 30px;
+            font-size: 25px;
+            background: bottom/contain no-repeat;
+          }
 				
-			a:hover::before {
-					color: $purple-highlight;
-			}
-				
-			&.twitter::before { content: "\e908"; }
-			&.google::before { content: "\e904"; }
-			&.facebook::before { content: "\e902"; }
-			&.github::before { content: "\e903"; }				
-			}
-			
-			a:hover:before {
-				color: $purple-highlight;
-			}
+            a:hover::before {
+              color: $purple-highlight;
+            }
+
+            &.twitter::before { content: "\e908"; }
+            &.google::before { content: "\e904"; }
+            &.facebook::before { content: "\e902"; }
+            &.github::before { content: "\e903"; }				
+            }
+
+            a:hover:before {
+              color: $purple-highlight;
+            }
     }
   }
 
