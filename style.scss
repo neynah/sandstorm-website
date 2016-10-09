@@ -2671,7 +2671,7 @@ body >footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      float: center;
+      justify-content: center;
     }
 
     li {
